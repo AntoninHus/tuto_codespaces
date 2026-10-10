@@ -26,14 +26,11 @@ def moyenne(valeurs):
         raise ValueError("la liste est vide")
     c = 0
     for e in valeurs:
-        c += e 
+        c += e
     return c/len(valeurs)
-
-
 
 
 if __name__ == "__main__":
     Console().print(Markdown(moyenne.__doc__))
     print("moyenne([10, 20, 15]) :", end=" ")
     print(moyenne([10, 20, 15]))
-
