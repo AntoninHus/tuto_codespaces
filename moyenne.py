@@ -36,3 +36,4 @@ if __name__ == "__main__":
     Console().print(Markdown(moyenne.__doc__))
     print("moyenne([10, 20, 15]) :", end=" ")
     print(moyenne([10, 20, 15]))
+
