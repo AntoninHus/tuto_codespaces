@@ -3,10 +3,10 @@
 # NB: Ce fichier contient volontairement des erreurs de qualité de code
 # mais il reste fonctionnel
 
-from rich.markdown import Markdown
 from rich.console import Console
+from rich.markdown import Markdown
+
 from moyenne import moyenne
-import math
 
 
 def test_moyenne():
@@ -30,4 +30,8 @@ def test_moyenne_liste_vide():
 
 
 if __name__ == "__main__":
-    Console().print(Markdown("Ce fichier ne doit pas être appelé directement, utiliser la commande `pytest`"))
+    Console().print(
+        Markdown(
+            "Ce fichier ne doit pas être appelé directement, utiliser la commande `pytest`"
+        )
+    )
