@@ -7,7 +7,6 @@ from rich.console import Console
 
 
 def moyenne(valeurs):
-    
     # docstrings en markdown
     """
     # Calcule la moyenne des valeurs.
@@ -23,8 +22,14 @@ def moyenne(valeurs):
 
     ---
     """
-    print("!! TODO : Compléter la fonction moyenne !!", end=" ")
-    pass
+    if valeurs == []:
+        raise ValueError("la liste est vide")
+    c = 0
+    for e in valeurs:
+        c += e 
+    return c/len(valeurs)
+
+
 
 
 if __name__ == "__main__":
